@@ -16,15 +16,14 @@ insert into table2(id,name)values
 -- inner join
 select count(*) from table1
 inner join table2 on table1.id=table2.id;
--- left join
+-- leftjoin
 SELECT count(*) FROM table1
 LEFT JOIN TABLE2 ON table1.id=table2.id;
--- right join
+-- rightjoin
 SELECT COUNT(*) 
 FROM table1
 RIGHT JOIN Table2 ON table1.id = table2.id;
--- fulljoin used this method because fulljoin was showing syntax error on the compiler so just took out the union of left join
--- of both the tables.
+-- fulljoin used this method because full join was showing error so did union of left join of the both table.
 SELECT COUNT(*)
 FROM Table1
 LEFT JOIN Table2 ON Table1.id = Table2.id
