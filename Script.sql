@@ -32,3 +32,4 @@ SELECT E.emp_name AS employee_name
 FROM employees E
 JOIN employees M ON E.manager_id = M.emp_id
 WHERE E.salary > M.salary;
+
